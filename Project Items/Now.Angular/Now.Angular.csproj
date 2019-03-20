@@ -1,0 +1,268 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>Now\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.Internal" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\500X500-01.svg" />
+    <Content Remove="wwwroot\images\blog\05-img.jpg" />
+    <Content Remove="wwwroot\images\blog\06-img.jpg" />
+    <Content Remove="wwwroot\images\blog\07-img.jpg" />
+    <Content Remove="wwwroot\images\blog\08-img.jpg" />
+    <Content Remove="wwwroot\images\blog\09-img.jpg" />
+    <Content Remove="wwwroot\images\blog\1.jpg" />
+    <Content Remove="wwwroot\images\blog\10-img.jpg" />
+    <Content Remove="wwwroot\images\blog\11-img.jpg" />
+    <Content Remove="wwwroot\images\blog\12-img.jpg" />
+    <Content Remove="wwwroot\images\blog\13-img.jpg" />
+    <Content Remove="wwwroot\images\blog\2.jpg" />
+    <Content Remove="wwwroot\images\blog\3.jpg" />
+    <Content Remove="wwwroot\images\blog\4.jpg" />
+    <Content Remove="wwwroot\images\blog\blog-bg.jpg" />
+    <Content Remove="wwwroot\images\blog\blog-page-1.jpg" />
+    <Content Remove="wwwroot\images\blog\blog-page-2.jpg" />
+    <Content Remove="wwwroot\images\blog\blog-page-3.jpg" />
+    <Content Remove="wwwroot\images\blog\blog-page-4.jpg" />
+    <Content Remove="wwwroot\images\ecommerce\1.png" />
+    <Content Remove="wwwroot\images\ecommerce\10.png" />
+    <Content Remove="wwwroot\images\ecommerce\11.png" />
+    <Content Remove="wwwroot\images\ecommerce\12.png" />
+    <Content Remove="wwwroot\images\ecommerce\13.png" />
+    <Content Remove="wwwroot\images\ecommerce\14.png" />
+    <Content Remove="wwwroot\images\ecommerce\15.png" />
+    <Content Remove="wwwroot\images\ecommerce\16.png" />
+    <Content Remove="wwwroot\images\ecommerce\2.png" />
+    <Content Remove="wwwroot\images\ecommerce\3.png" />
+    <Content Remove="wwwroot\images\ecommerce\4.png" />
+    <Content Remove="wwwroot\images\ecommerce\5.png" />
+    <Content Remove="wwwroot\images\ecommerce\6.png" />
+    <Content Remove="wwwroot\images\ecommerce\7.png" />
+    <Content Remove="wwwroot\images\ecommerce\8.png" />
+    <Content Remove="wwwroot\images\ecommerce\9.png" />
+    <Content Remove="wwwroot\images\empleyado.svg" />
+    <Content Remove="wwwroot\images\image-gallery\1.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\10.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\11.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\12.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\13.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\14.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\15.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\2.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\3.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\4.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\5.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\6.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\7.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\8.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\9.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-1.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-10.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-11.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-12.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-13.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-14.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-15.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-2.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-3.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-4.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-5.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-6.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-7.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-8.jpg" />
+    <Content Remove="wwwroot\images\image-gallery\thumb\thumb-9.jpg" />
+    <Content Remove="wwwroot\images\image1.jpg" />
+    <Content Remove="wwwroot\images\image2.jpg" />
+    <Content Remove="wwwroot\images\image3.jpg" />
+    <Content Remove="wwwroot\images\image4.jpg" />
+    <Content Remove="wwwroot\images\lg\avatar1.jpg" />
+    <Content Remove="wwwroot\images\lg\avatar2.jpg" />
+    <Content Remove="wwwroot\images\lg\avatar3.jpg" />
+    <Content Remove="wwwroot\images\lg\avatar4.jpg" />
+    <Content Remove="wwwroot\images\lg\avatar5.jpg" />
+    <Content Remove="wwwroot\images\lg\avatar6.jpg" />
+    <Content Remove="wwwroot\images\logo.svg" />
+    <Content Remove="wwwroot\images\model1.jpg" />
+    <Content Remove="wwwroot\images\model2.jpg" />
+    <Content Remove="wwwroot\images\model3.jpg" />
+    <Content Remove="wwwroot\images\noimage.png" />
+    <Content Remove="wwwroot\images\profile_av.jpg" />
+    <Content Remove="wwwroot\images\sm\avatar1.jpg" />
+    <Content Remove="wwwroot\images\sm\avatar2.jpg" />
+    <Content Remove="wwwroot\images\sm\avatar3.jpg" />
+    <Content Remove="wwwroot\images\sm\avatar4.jpg" />
+    <Content Remove="wwwroot\images\sm\avatar5.jpg" />
+    <Content Remove="wwwroot\images\sm\avatar6.jpg" />
+    <Content Remove="wwwroot\images\weather\cloudy.svg" />
+    <Content Remove="wwwroot\images\weather\moon.svg" />
+    <Content Remove="wwwroot\images\weather\rain.svg" />
+    <Content Remove="wwwroot\images\weather\sky.svg" />
+    <Content Remove="wwwroot\images\weather\summer.svg" />
+    <Content Remove="wwwroot\images\weather\wind.svg" />
+    <Content Remove="wwwroot\images\xs\avatar1.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar10.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar2.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar3.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar4.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar5.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar6.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar7.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar8.jpg" />
+    <Content Remove="wwwroot\images\xs\avatar9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\500X500-01.svg" />
+    <None Include="wwwroot\images\blog\05-img.jpg" />
+    <None Include="wwwroot\images\blog\06-img.jpg" />
+    <None Include="wwwroot\images\blog\07-img.jpg" />
+    <None Include="wwwroot\images\blog\08-img.jpg" />
+    <None Include="wwwroot\images\blog\09-img.jpg" />
+    <None Include="wwwroot\images\blog\1.jpg" />
+    <None Include="wwwroot\images\blog\10-img.jpg" />
+    <None Include="wwwroot\images\blog\11-img.jpg" />
+    <None Include="wwwroot\images\blog\12-img.jpg" />
+    <None Include="wwwroot\images\blog\13-img.jpg" />
+    <None Include="wwwroot\images\blog\2.jpg" />
+    <None Include="wwwroot\images\blog\3.jpg" />
+    <None Include="wwwroot\images\blog\4.jpg" />
+    <None Include="wwwroot\images\blog\blog-bg.jpg" />
+    <None Include="wwwroot\images\blog\blog-page-1.jpg" />
+    <None Include="wwwroot\images\blog\blog-page-2.jpg" />
+    <None Include="wwwroot\images\blog\blog-page-3.jpg" />
+    <None Include="wwwroot\images\blog\blog-page-4.jpg" />
+    <None Include="wwwroot\images\ecommerce\1.png" />
+    <None Include="wwwroot\images\ecommerce\10.png" />
+    <None Include="wwwroot\images\ecommerce\11.png" />
+    <None Include="wwwroot\images\ecommerce\12.png" />
+    <None Include="wwwroot\images\ecommerce\13.png" />
+    <None Include="wwwroot\images\ecommerce\14.png" />
+    <None Include="wwwroot\images\ecommerce\15.png" />
+    <None Include="wwwroot\images\ecommerce\16.png" />
+    <None Include="wwwroot\images\ecommerce\2.png" />
+    <None Include="wwwroot\images\ecommerce\3.png" />
+    <None Include="wwwroot\images\ecommerce\4.png" />
+    <None Include="wwwroot\images\ecommerce\5.png" />
+    <None Include="wwwroot\images\ecommerce\6.png" />
+    <None Include="wwwroot\images\ecommerce\7.png" />
+    <None Include="wwwroot\images\ecommerce\8.png" />
+    <None Include="wwwroot\images\ecommerce\9.png" />
+    <None Include="wwwroot\images\empleyado.svg" />
+    <None Include="wwwroot\images\image-gallery\1.jpg" />
+    <None Include="wwwroot\images\image-gallery\10.jpg" />
+    <None Include="wwwroot\images\image-gallery\11.jpg" />
+    <None Include="wwwroot\images\image-gallery\12.jpg" />
+    <None Include="wwwroot\images\image-gallery\13.jpg" />
+    <None Include="wwwroot\images\image-gallery\14.jpg" />
+    <None Include="wwwroot\images\image-gallery\15.jpg" />
+    <None Include="wwwroot\images\image-gallery\2.jpg" />
+    <None Include="wwwroot\images\image-gallery\3.jpg" />
+    <None Include="wwwroot\images\image-gallery\4.jpg" />
+    <None Include="wwwroot\images\image-gallery\5.jpg" />
+    <None Include="wwwroot\images\image-gallery\6.jpg" />
+    <None Include="wwwroot\images\image-gallery\7.jpg" />
+    <None Include="wwwroot\images\image-gallery\8.jpg" />
+    <None Include="wwwroot\images\image-gallery\9.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-1.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-10.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-11.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-12.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-13.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-14.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-15.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-2.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-3.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-4.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-5.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-6.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-7.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-8.jpg" />
+    <None Include="wwwroot\images\image-gallery\thumb\thumb-9.jpg" />
+    <None Include="wwwroot\images\image1.jpg" />
+    <None Include="wwwroot\images\image2.jpg" />
+    <None Include="wwwroot\images\image3.jpg" />
+    <None Include="wwwroot\images\image4.jpg" />
+    <None Include="wwwroot\images\lg\avatar1.jpg" />
+    <None Include="wwwroot\images\lg\avatar2.jpg" />
+    <None Include="wwwroot\images\lg\avatar3.jpg" />
+    <None Include="wwwroot\images\lg\avatar4.jpg" />
+    <None Include="wwwroot\images\lg\avatar5.jpg" />
+    <None Include="wwwroot\images\lg\avatar6.jpg" />
+    <None Include="wwwroot\images\logo.svg" />
+    <None Include="wwwroot\images\model1.jpg" />
+    <None Include="wwwroot\images\model2.jpg" />
+    <None Include="wwwroot\images\model3.jpg" />
+    <None Include="wwwroot\images\noimage.png" />
+    <None Include="wwwroot\images\profile_av.jpg" />
+    <None Include="wwwroot\images\sm\avatar1.jpg" />
+    <None Include="wwwroot\images\sm\avatar2.jpg" />
+    <None Include="wwwroot\images\sm\avatar3.jpg" />
+    <None Include="wwwroot\images\sm\avatar4.jpg" />
+    <None Include="wwwroot\images\sm\avatar5.jpg" />
+    <None Include="wwwroot\images\sm\avatar6.jpg" />
+    <None Include="wwwroot\images\weather\cloudy.svg" />
+    <None Include="wwwroot\images\weather\moon.svg" />
+    <None Include="wwwroot\images\weather\rain.svg" />
+    <None Include="wwwroot\images\weather\sky.svg" />
+    <None Include="wwwroot\images\weather\summer.svg" />
+    <None Include="wwwroot\images\weather\wind.svg" />
+    <None Include="wwwroot\images\xs\avatar1.jpg" />
+    <None Include="wwwroot\images\xs\avatar10.jpg" />
+    <None Include="wwwroot\images\xs\avatar2.jpg" />
+    <None Include="wwwroot\images\xs\avatar3.jpg" />
+    <None Include="wwwroot\images\xs\avatar4.jpg" />
+    <None Include="wwwroot\images\xs\avatar5.jpg" />
+    <None Include="wwwroot\images\xs\avatar6.jpg" />
+    <None Include="wwwroot\images\xs\avatar7.jpg" />
+    <None Include="wwwroot\images\xs\avatar8.jpg" />
+    <None Include="wwwroot\images\xs\avatar9.jpg" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

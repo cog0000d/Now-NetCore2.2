@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>empleyado.Now.Entities</PackageId>
+    <Authors>Cognitif Solutions</Authors>
+    <Company>Cognitif Incorporated</Company>
+    <Product>empleyado</Product>
+    <Description>Workforce and Timekeeping Tool Entities and Models</Description>
+    <Copyright>empleyado</Copyright>
+    <PackageLicenseUrl />
+    <PackageIconUrl>http://dev-accounts.empleyado.com/favicon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/empleyado/Now.git</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <NeutralLanguage>English (Republic of the Philippines)</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Training|AnyCPU'" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Staging|AnyCPU'" />
+
+  <ItemGroup>
+    <PackageReference Include="empleyado.Common.Entities" Version="2.2.1-CI00008" />
+  </ItemGroup>
+
+</Project>

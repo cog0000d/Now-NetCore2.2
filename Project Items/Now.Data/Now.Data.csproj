@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>empleyado.Now.Data</PackageId>
+    <Authors>Cognitif Solutions</Authors>
+    <Company>Cognitif Incorporated</Company>
+    <Product>empleyado</Product>
+    <Description>Workforce and Timekeeping Tool Data Connection</Description>
+    <Copyright>empleyado</Copyright>
+    <PackageIconUrl>http://dev-accounts.empleyado.com/favicon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/empleyado/Now.git</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <NeutralLanguage>English (Republic of the Philippines)</NeutralLanguage>
+    <Version>2.0.0</Version>
+    <AssemblyName>empleyado.Now.Data</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Training|AnyCPU'" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Staging|AnyCPU'" />
+
+  <ItemGroup>
+    <Compile Remove="DataContexts\NowMigrations\**" />
+    <Compile Remove="DbContexts\**" />
+    <EmbeddedResource Remove="DataContexts\NowMigrations\**" />
+    <EmbeddedResource Remove="DbContexts\**" />
+    <None Remove="DataContexts\NowMigrations\**" />
+    <None Remove="DbContexts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataContexts\NowDataConfiguration.cs" />
+    <Compile Remove="DataContexts\NowDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="empleyado.Common.Data" Version="2.2.1-CI00008" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Now.Entities\Now.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
